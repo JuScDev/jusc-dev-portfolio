@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Theme } from './ui-elements/theme-toggle/theme-toggle.component';
 
 @Injectable({
   providedIn: 'root',
@@ -8,7 +9,7 @@ export class PersistenceService {
     localStorage.setItem('theme', theme);
   }
 
-  public getTheme(): string | null {
-    return localStorage.getItem('theme');
+  public getTheme(): Theme {
+    return (localStorage.getItem('theme') as Theme) ?? 'light';
   }
 }

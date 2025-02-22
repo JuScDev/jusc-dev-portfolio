@@ -1,12 +1,87 @@
+<p class="live-element">I <span class="heart">❤️</span> Coding</p>
+
 <div class="editor">
   <div class="editor-headline">
-    <i>// frontend.ts</i>
+    <i>// frontend.css</i>
   </div>
   <div class="editor-main-content">
-    <div class="line-numbers">1</div>
-
-    <div class="editor-content">
-      <code class="language-javascript"> code </code>
+    <div class="line-numbers">
+      <span>1</span>
+      <span>2</span>
+      <span>3</span>
+      <span>4</span>
+      <span>5</span>
+      <span>6</span>
+      <span>7</span>
+      <span>8</span>
+      <span>9</span>
+      <span>10</span>
+      <span>11</span>
+      <span>12</span>
+      <span>13</span>
+      <span>14</span>
+      <span>15</span>
+      <span>16</span>
+      <span>17</span>
     </div>
+
+    <code class="editor-content">
+      <span
+        appTypewriterEffect
+        text="// Coding is awesome 😊"
+        class="comment"
+      ></span>
+      @if(showFirstElements ()) {
+      <span #secondLine appTypewriterEffect [text]="secondLineTypeable"></span>
+      <span [innerText]="'&nbsp;'"></span>
+      @if(showSecondElements()) {
+      <span #fourthLine appTypewriterEffect [text]="fourthLineTypeable"></span>
+      <span #fifthLine appTypewriterEffect [text]="fifthLineTypeable"></span>
+      <span #sixthLine appTypewriterEffect [text]="sixthLineTypeable"></span>
+      <span
+        #seventhLine
+        appTypewriterEffect
+        [text]="seventhLineTypeable"
+      ></span>
+      <span #eighthLine appTypewriterEffect [text]="eighthLineTypeable"></span>
+      } @if(showLastElements()) {
+      <span #ninthLine appTypewriterEffect [text]="ninthLineTypeable"></span>
+      } @if(showSecondElements()) {
+      <span #tenthLine appTypewriterEffect [text]="tenthLineTypeable"></span>
+      } @if(showLastElements()) {
+      <span [innerText]="'&nbsp;'"></span>
+      <span
+        #twelfthLine
+        appTypewriterEffect
+        [text]="twelfthLineTypeable"
+      ></span>
+      <span
+        #thirteenthLine
+        appTypewriterEffect
+        [text]="thirteenthLineTypeable"
+      ></span>
+      <span
+        #fourteenthLine
+        appTypewriterEffect
+        [text]="fourteenthLineTypeable"
+      ></span>
+      <span
+        #fifteenthLine
+        appTypewriterEffect
+        [text]="fifteenthLineTypeable"
+      ></span>
+      <span
+        #sixteenthLine
+        appTypewriterEffect
+        [text]="sixteenthLineTypeable"
+      ></span>
+      } @if(showSecondElements()) {
+      <span
+        #seventeenthLine
+        appTypewriterEffect
+        [text]="seventeenthLineTypeable"
+      ></span>
+      } }
+    </code>
   </div>
 </div>

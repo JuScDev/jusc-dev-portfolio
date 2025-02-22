@@ -2,12 +2,12 @@
   <input
     type="checkbox"
     id="checkbox"
-    [checked]="theme() === 'dark'"
-    (change)="toggleTheme()"
+    [checked]="dataService.theme() === 'dark'"
+    (change)="dataService.toggleTheme()"
   />
   <div class="slider">
     <div class="slider-circle">
-      @if (theme() === 'dark') {
+      @if (dataService.theme() === 'dark') {
       <i class="fa-solid fa-moon"></i>
       } @else {
       <i class="fa-solid fa-sun"></i>

@@ -1,11 +1,26 @@
 :host {
-  display: block;
-  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  width: 100%;
+  max-width: 1000px;
+
+  .live-element {
+    font-size: 16px;
+    flex-grow: 1;
+    text-align: center;
+
+    > span {
+      margin: 0 10px;
+    }
+  }
 
   .editor {
     background: var(--global-bg);
     border-radius: 5px;
     border: 1px solid var(--primary);
+    width: 100%;
 
     .editor-headline {
       padding: 5px;
@@ -16,13 +31,63 @@
     .editor-main-content {
       display: flex;
       padding: 5px;
+      font-size: 16px;
+      line-height: 16px;
 
-      .editor-line-numbers {
-        padding: 5px;
+      .line-numbers,
+      .editor-content {
         display: flex;
         flex-direction: column;
         gap: 5px;
+        padding: 5px;
+      }
+
+      .editor-content {
+        .comment {
+          color: #6a9956;
+        }
+      }
+
+      .line-numbers {
+        color: var(--primary);
         border-right: 1px solid var(--primary);
+      }
+    }
+  }
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    justify-content: space-between;
+
+    .live-element {
+      font-size: 24px;
+    }
+
+    .editor {
+      width: 500px;
+    }
+  }
+
+  &.show-second-step .live-element .heart {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 40px;
+  }
+
+  &.show-last-step .live-element {
+    .heart {
+      animation: 1.5s infinite pulse;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.5);
+      }
+      100% {
+        transform: scale(1);
       }
     }
   }
