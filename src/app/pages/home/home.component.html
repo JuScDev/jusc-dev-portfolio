@@ -1,0 +1,48 @@
+<app-theme-toggle />
+<h1 appTypewriterEffect text="Hey, I am Julian – Frontend Webdeveloper."></h1>
+<app-two-column-layout
+  class="first-section"
+  imageSrc="assets/images/office.jpg"
+  imageAlt="Office"
+>
+  <div class="two-column-text-wrapper">
+    <h2>Crafting innovative Web Solutions for You</h2>
+    <p>
+      As a passionate web developer, I specialize in creating dynamic and
+      user-friendly web application tailored to your needs. Explore my portfolio
+      to see how I can bring your vision to life.
+    </p>
+    <div class="call-to-action">
+      <app-button text="Explore"></app-button>
+      <app-button text="Contact" [variant]="'secondary'"></app-button>
+    </div>
+  </div>
+</app-two-column-layout>
+<app-word-flip
+  [firstString]="'I build'"
+  [changingWords]="[
+    'Frontends',
+    'Webcomponents',
+    'Web Apps',
+    'Solutions',
+    'Ideas'
+  ]"
+  [lastString]="'with passion'"
+></app-word-flip>
+<app-two-column-layout
+  class="first-section"
+  imageSrc="assets/images/office.jpg"
+  imageAlt="Office"
+  [imageRight]="false"
+>
+  <div class="two-column-text-wrapper">
+    <h2>Clean Code, Performance & Great UX – My Development Principles</h2>
+    <p>
+      I believe that great web applications are built on clean, maintainable
+      code, high performance, and an excellent user experience. My goal is to
+      create scalable and future-proof solutions that not only work but also
+      feel great to use.
+    </p>
+  </div>
+</app-two-column-layout>
+<app-magic-code-snippet></app-magic-code-snippet>

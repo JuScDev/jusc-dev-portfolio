@@ -1,0 +1,30 @@
+:host {
+  display: inline-block;
+
+  button {
+    height: 40px;
+    padding: 0 20px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid var(--primary);
+    background-color: var(--primary);
+    color: var(--global-bg);
+
+    &:hover {
+      background-color: var(--primary-hover);
+    }
+  }
+
+  &.secondary {
+    button {
+      background-color: var(--global-bg);
+      color: var(--primary);
+
+      &:hover {
+        border-color: var(--primary-hover);
+        color: var(--primary-hover);
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+<label class="theme-switch" for="checkbox">
+  <input
+    type="checkbox"
+    id="checkbox"
+    [checked]="theme() === 'dark'"
+    (change)="toggleTheme()"
+  />
+  <div class="slider">
+    <div class="slider-circle">
+      @if (theme() === 'dark') {
+      <i class="fa-solid fa-moon"></i>
+      } @else {
+      <i class="fa-solid fa-sun"></i>
+      }
+    </div>
+  </div>
+</label>

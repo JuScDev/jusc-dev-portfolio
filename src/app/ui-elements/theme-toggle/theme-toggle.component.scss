@@ -1,0 +1,75 @@
+:host {
+  display: block;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1;
+
+  --theme-toggle-height: 34px;
+  --theme-toggle-circle: calc(var(--theme-toggle-height) - 8px);
+  --light-mode-bg: #fae9a0;
+  --light-mode-circle: #ebac00;
+  --light-mode-hover: #fcd874;
+  --dark-mode-bg: #a1cced;
+  --dark-mode-circle: #3489cb;
+  --dark-mode-hover: #56aff3;
+
+  .theme-switch {
+    display: inline-block;
+    height: var(--theme-toggle-height);
+    width: 60px;
+    position: relative;
+
+    > input {
+      display: none;
+    }
+
+    .slider {
+      position: absolute;
+      inset: 0;
+      cursor: pointer;
+      background-color: var(--light-mode-bg);
+      border-radius: var(--theme-toggle-height);
+      transition: 0.4s;
+
+      &:hover {
+        background-color: var(--light-mode-hover);
+      }
+
+      .slider-circle {
+        position: absolute;
+        bottom: 4px;
+        left: 4px;
+        border-radius: 50%;
+        width: var(--theme-toggle-circle);
+        height: var(--theme-toggle-circle);
+        background-color: var(--light-mode-circle);
+        transition: 0.4s;
+
+        > i {
+          position: absolute;
+          top: 5px;
+          left: 5px;
+          color: var(--global-bg);
+        }
+      }
+    }
+
+    input:checked + .slider {
+      background-color: var(--dark-mode-bg);
+
+      &:hover {
+        background-color: var(--dark-mode-hover);
+      }
+
+      .slider-circle {
+        background-color: var(--dark-mode-circle);
+        transform: translateX(var(--theme-toggle-circle));
+
+        > i {
+          left: 7px;
+        }
+      }
+    }
+  }
+}

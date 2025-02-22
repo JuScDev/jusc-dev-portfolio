@@ -1,0 +1,9 @@
+<p>{{ firstString().toLocaleUpperCase() }}</p>
+<div class="flipping-words">
+  @for(word of reversedChangingWords; track word) {
+  <p class="flipping-word">
+    <span>{{ word.toLocaleUpperCase() }}</span>
+  </p>
+  }
+</div>
+<p>{{ lastString().toLocaleUpperCase() }}</p>

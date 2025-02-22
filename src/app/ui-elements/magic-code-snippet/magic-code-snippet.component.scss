@@ -1,0 +1,29 @@
+:host {
+  display: block;
+  max-width: 500px;
+
+  .editor {
+    background: var(--global-bg);
+    border-radius: 5px;
+    border: 1px solid var(--primary);
+
+    .editor-headline {
+      padding: 5px;
+      color: var(--global-bg);
+      background-color: var(--primary-hover);
+    }
+
+    .editor-main-content {
+      display: flex;
+      padding: 5px;
+
+      .editor-line-numbers {
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        border-right: 1px solid var(--primary);
+      }
+    }
+  }
+}

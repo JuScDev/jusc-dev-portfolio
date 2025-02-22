@@ -1,0 +1,33 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+  padding: 50px;
+
+  > h1 {
+    text-align: center;
+  }
+
+  .two-column-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .call-to-action {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    gap: 20px;
+
+    .two-column-text-wrapper {
+      .call-to-action {
+        justify-content: flex-start;
+      }
+    }
+  }
+}

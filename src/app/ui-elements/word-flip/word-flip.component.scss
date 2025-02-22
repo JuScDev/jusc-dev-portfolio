@@ -1,0 +1,169 @@
+@keyframes show {
+  0% {
+    margin-top: -270px;
+  }
+  3% {
+    margin-top: -180px;
+  }
+  33% {
+    margin-top: -180px;
+  }
+  36% {
+    margin-top: -90px;
+  }
+  66% {
+    margin-top: -90px;
+  }
+  69% {
+    margin-top: 0px;
+  }
+  99.99% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: -270px;
+  }
+}
+
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
+  p {
+    font-size: 1.5rem;
+
+    @media (min-width: 1024px) {
+      font-size: 2.5rem;
+    }
+  }
+
+  .flipping-words {
+    height: 55px;
+    overflow: hidden;
+
+    .flipping-word {
+      color: white;
+
+      height: 55px;
+      margin-bottom: 35px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      span {
+        padding: 4px 12px;
+        border-radius: 5px;
+      }
+
+      &:first-child {
+        animation: show 7.5s linear infinite;
+
+        span {
+          background-color: var(--quinary);
+        }
+      }
+
+      &:nth-child(2) span {
+        background-color: var(--quaternary);
+      }
+
+      &:nth-child(3) span {
+        background-color: var(--tertiary);
+      }
+
+      &:nth-child(4) span {
+        background-color: var(--secondary);
+      }
+
+      &:nth-child(5) span {
+        background-color: var(--primary);
+      }
+    }
+  }
+
+  &.four-words {
+    @keyframes show {
+      0% {
+        margin-top: -360px;
+      }
+      3% {
+        margin-top: -270px;
+      }
+      25% {
+        margin-top: -270px;
+      }
+      28% {
+        margin-top: -180px;
+      }
+      50% {
+        margin-top: -180px;
+      }
+      53% {
+        margin-top: -90px;
+      }
+      75% {
+        margin-top: -90px;
+      }
+      78% {
+        margin-top: 0px;
+      }
+      99.99% {
+        margin-top: 0px;
+      }
+      100% {
+        margin-top: -360px;
+      }
+    }
+
+    .flipping-words .flipping-word:first-child {
+      animation-duration: 10s;
+    }
+  }
+
+  &.five-words {
+    @keyframes show {
+      0% {
+        margin-top: -450px;
+      }
+      3% {
+        margin-top: -360px;
+      }
+      20% {
+        margin-top: -360px;
+      }
+      23% {
+        margin-top: -270px;
+      }
+      40% {
+        margin-top: -270px;
+      }
+      43% {
+        margin-top: -180px;
+      }
+      60% {
+        margin-top: -180px;
+      }
+      63% {
+        margin-top: -90px;
+      }
+      80% {
+        margin-top: -90px;
+      }
+      83% {
+        margin-top: 0px;
+      }
+      99.99% {
+        margin-top: 0px;
+      }
+      100% {
+        margin-top: -450px;
+      }
+    }
+
+    .flipping-words .flipping-word:first-child {
+      animation-duration: 12.5s;
+    }
+  }
+}
