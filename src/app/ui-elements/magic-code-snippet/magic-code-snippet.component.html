@@ -4,84 +4,230 @@
   <div class="editor-headline">
     <i>// frontend.css</i>
   </div>
-  <div class="editor-main-content">
-    <div class="line-numbers">
-      <span>1</span>
-      <span>2</span>
-      <span>3</span>
-      <span>4</span>
-      <span>5</span>
-      <span>6</span>
-      <span>7</span>
-      <span>8</span>
-      <span>9</span>
-      <span>10</span>
-      <span>11</span>
-      <span>12</span>
-      <span>13</span>
-      <span>14</span>
-      <span>15</span>
-      <span>16</span>
-      <span>17</span>
-    </div>
-
-    <code class="editor-content">
-      <span
-        appTypewriterEffect
-        text="// Coding is awesome 😊"
-        class="comment"
-      ></span>
-      @if(showFirstElements ()) {
-      <span #secondLine appTypewriterEffect [text]="secondLineTypeable"></span>
-      <span [innerText]="'&nbsp;'"></span>
-      @if(showSecondElements()) {
-      <span #fourthLine appTypewriterEffect [text]="fourthLineTypeable"></span>
-      <span #fifthLine appTypewriterEffect [text]="fifthLineTypeable"></span>
-      <span #sixthLine appTypewriterEffect [text]="sixthLineTypeable"></span>
-      <span
-        #seventhLine
-        appTypewriterEffect
-        [text]="seventhLineTypeable"
-      ></span>
-      <span #eighthLine appTypewriterEffect [text]="eighthLineTypeable"></span>
-      } @if(showLastElements()) {
-      <span #ninthLine appTypewriterEffect [text]="ninthLineTypeable"></span>
-      } @if(showSecondElements()) {
-      <span #tenthLine appTypewriterEffect [text]="tenthLineTypeable"></span>
-      } @if(showLastElements()) {
-      <span [innerText]="'&nbsp;'"></span>
-      <span
-        #twelfthLine
-        appTypewriterEffect
-        [text]="twelfthLineTypeable"
-      ></span>
-      <span
-        #thirteenthLine
-        appTypewriterEffect
-        [text]="thirteenthLineTypeable"
-      ></span>
-      <span
-        #fourteenthLine
-        appTypewriterEffect
-        [text]="fourteenthLineTypeable"
-      ></span>
-      <span
-        #fifteenthLine
-        appTypewriterEffect
-        [text]="fifteenthLineTypeable"
-      ></span>
-      <span
-        #sixteenthLine
-        appTypewriterEffect
-        [text]="sixteenthLineTypeable"
-      ></span>
-      } @if(showSecondElements()) {
-      <span
-        #seventeenthLine
-        appTypewriterEffect
-        [text]="seventeenthLineTypeable"
-      ></span>
-      } }
-    </code>
-  </div>
+  <table class="editor-main-content">
+    <tr>
+      <th class="line-numbers">1</th>
+      <td class="editor-content">
+        <div>
+          <span
+            appTypewriterEffect
+            text="// Coding is awesome 😊"
+            class="comment"
+          ></span>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <th class="line-numbers">2</th>
+      <td class="editor-content">
+        <div>
+          @if(showFirstElements()) {
+          <span
+            #secondLine
+            appTypewriterEffect
+            [text]="secondLineTypeable"
+          ></span>
+          }
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <th class="line-numbers">3</th>
+      <td class="editor-content">
+        <div>
+          @if(showSecondElements()) {
+          <span [innerText]="'&nbsp;'"></span>
+          }
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <th class="line-numbers">4</th>
+      <td class="editor-content">
+        <div>
+          @if(showSecondElements()) {
+          <span
+            #fourthLine
+            appTypewriterEffect
+            [text]="fourthLineTypeable"
+          ></span>
+          }
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <th class="line-numbers">5</th>
+      <td class="editor-content">
+        <div>
+          @if(showSecondElements()) {
+          <span
+            #fifthLine
+            appTypewriterEffect
+            [text]="fifthLineTypeable"
+          ></span>
+          }
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <th class="line-numbers">6</th>
+      <td class="editor-content">
+        <div>
+          @if(showSecondElements()) {
+          <span
+            #sixthLine
+            appTypewriterEffect
+            [text]="sixthLineTypeable"
+          ></span>
+          }
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <th class="line-numbers">7</th>
+      <td class="editor-content">
+        <div>
+          @if(showSecondElements()) {
+          <span
+            #seventhLine
+            appTypewriterEffect
+            [text]="seventhLineTypeable"
+          ></span>
+          }
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <th class="line-numbers">8</th>
+      <td class="editor-content">
+        <div>
+          @if(showSecondElements()) {
+          <span
+            #eighthLine
+            appTypewriterEffect
+            [text]="eighthLineTypeable"
+          ></span>
+          }
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <th class="line-numbers">9</th>
+      <td class="editor-content">
+        <div>
+          @if(showLastElements()) {
+          <span #ninthLine appTypewriterEffect [text]="ninthLineTypeable"></span
+          >}
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <th class="line-numbers">10</th>
+      <td class="editor-content">
+        <div>
+          @if(showSecondElements()) {
+          <span
+            #tenthLine
+            appTypewriterEffect
+            [text]="tenthLineTypeable"
+          ></span>
+          }
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <th class="line-numbers">11</th>
+      <td class="editor-content">
+        <div>
+          @if(showLastElements()) {
+          <span [innerText]="'&nbsp;'"></span>
+          }
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <th class="line-numbers">12</th>
+      <td class="editor-content">
+        <div>
+          @if(showLastElements()) {
+          <span
+            #twelfthLine
+            appTypewriterEffect
+            [text]="twelfthLineTypeable"
+          ></span>
+          }
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <th class="line-numbers">13</th>
+      <td class="editor-content">
+        <div>
+          @if(showLastElements()) {
+          <span
+            #thirteenthLine
+            appTypewriterEffect
+            [text]="thirteenthLineTypeable"
+          ></span>
+          }
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <th class="line-numbers">14</th>
+      <td class="editor-content">
+        <div>
+          @if(showLastElements()) {
+          <span
+            #fourteenthLine
+            appTypewriterEffect
+            [text]="fourteenthLineTypeable"
+          ></span>
+          }
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <th class="line-numbers">15</th>
+      <td class="editor-content">
+        <div>
+          @if(showLastElements()) {
+          <span
+            #fifteenthLine
+            appTypewriterEffect
+            [text]="fifteenthLineTypeable"
+          ></span>
+          }
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <th class="line-numbers">16</th>
+      <td class="editor-content">
+        <div>
+          @if(showLastElements()) {
+          <span
+            #sixteenthLine
+            appTypewriterEffect
+            [text]="sixteenthLineTypeable"
+          ></span>
+          }
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <th class="line-numbers">17</th>
+      <td class="editor-content">
+        <div>
+          @if(showSecondElements()) {
+          <span
+            #seventeenthLine
+            appTypewriterEffect
+            [text]="seventeenthLineTypeable"
+          ></span>
+          }
+        </div>
+      </td>
+    </tr>
+  </table>
 </div>

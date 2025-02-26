@@ -29,28 +29,32 @@
     }
 
     .editor-main-content {
-      display: flex;
       padding: 5px;
       font-size: 16px;
       line-height: 16px;
+      color: var(--global-text);
+      border-collapse: collapse;
 
       .line-numbers,
       .editor-content {
-        display: flex;
-        flex-direction: column;
-        gap: 5px;
+        vertical-align: top;
         padding: 5px;
-      }
-
-      .editor-content {
-        .comment {
-          color: #6a9956;
-        }
       }
 
       .line-numbers {
         color: var(--primary);
         border-right: 1px solid var(--primary);
+        text-align: right;
+        padding-right: 8px;
+        width: 30px;
+      }
+
+      .editor-content {
+        padding-left: 10px;
+
+        .comment {
+          color: #6a9956;
+        }
       }
     }
   }

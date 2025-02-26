@@ -200,6 +200,10 @@ export class MagicCodeSnippetComponent implements AfterViewInit {
   }
 
   private _editLine(lineEl: ElementRef<HTMLSpanElement>, theme: Theme): void {
+    if (!lineEl) {
+      return;
+    }
+
     const htmlTags = lineEl.nativeElement.querySelectorAll('.dark-blue');
     htmlTags.forEach((htmlTag) => {
       (htmlTag as HTMLSpanElement).style.color =
