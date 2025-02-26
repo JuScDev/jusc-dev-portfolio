@@ -1,9 +1,13 @@
 <app-theme-toggle />
-<h1 appTypewriterEffect text="Hey, I am Julian – Frontend Webdeveloper."></h1>
+<h1
+  appTypewriterEffect
+  [reserveSpace]="true"
+  text="Hey, I am Julian – Frontend Webdeveloper."
+></h1>
 <app-two-column-layout
   class="first-section"
-  imageSrc="assets/images/office.jpg"
-  imageAlt="Office"
+  imageSrc="assets/images/julian_front.jpeg"
+  imageAlt="Julian from front"
 >
   <div class="two-column-text-wrapper">
     <h2>Crafting innovative Web Solutions for You</h2>
@@ -30,9 +34,9 @@
   [lastString]="'with passion'"
 ></app-word-flip>
 <app-two-column-layout
-  class="first-section"
-  imageSrc="assets/images/office.jpg"
-  imageAlt="Office"
+  class="first-section align-top"
+  imageSrc="assets/images/julian_side.jpeg"
+  imageAlt="Julian from side"
   [imageRight]="false"
 >
   <div class="two-column-text-wrapper">
@@ -43,6 +47,28 @@
       create scalable and future-proof solutions that not only work but also
       feel great to use.
     </p>
+    <div class="icon-boxes">
+      <app-icon-box-popover icon="🧹" label="Clean Code">
+        <p>
+          I write clean, maintainable code that is easy to understand and
+          extend.
+        </p>
+      </app-icon-box-popover>
+      <app-icon-box-popover icon="🚀" label="Performance">
+        <p>
+          I optimize my applications for speed and performance to provide the
+          best user experience.
+        </p>
+      </app-icon-box-popover>
+      <app-icon-box-popover icon="🎨" label="Great UX">
+        <p>
+          I focus on creating intuitive and user-friendly interfaces that make
+          your application a joy to use.
+        </p>
+      </app-icon-box-popover>
+    </div>
   </div>
 </app-two-column-layout>
+@if(!triggerCodeExample()) {
 <app-magic-code-snippet />
+}

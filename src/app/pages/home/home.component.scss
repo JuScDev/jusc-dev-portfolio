@@ -12,12 +12,18 @@
   .two-column-text-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
 
     .call-to-action {
       display: flex;
       justify-content: center;
       gap: 20px;
+    }
+
+    .icon-boxes {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
     }
   }
 
