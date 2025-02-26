@@ -1,0 +1,11 @@
+<div class="icon-box" (click)="popupContentShown.set(!popupContentShown())">
+  <div class="headline">
+    <span class="icon">{{ icon() }}</span>
+    <span class="label">{{ label() }}</span>
+  </div>
+  @if (popupContentShown()) {
+  <div class="icon-box-content">
+    <ng-content />
+  </div>
+  }
+</div>

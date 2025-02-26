@@ -1,0 +1,63 @@
+:host {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+
+  .icon-box {
+    height: 54px;
+    font-size: 25px;
+    background-color: white;
+    box-shadow: var(--box-shadow);
+    border-radius: 5px;
+    padding: 10px 20px;
+    width: 180px;
+    transition: width ease-out 0.3s 0.3s, height ease-out 0.3s;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    cursor: pointer;
+
+    .headline {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+
+      .icon {
+        font-size: 26px;
+      }
+
+      .label {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .icon-box-content {
+    ::ng-deep {
+      * {
+        color: black;
+        font-size: 16px;
+      }
+    }
+  }
+
+  &.popup-content-shown {
+    .icon-box {
+      height: 120px;
+      width: 100%;
+      transition: width ease-out 0.3s, height ease-out 0.3s 0.3s;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    justify-content: flex-start;
+
+    .icon-box .headline {
+      justify-content: flex-start;
+    }
+  }
+}

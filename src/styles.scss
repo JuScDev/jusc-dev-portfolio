@@ -9,6 +9,7 @@
   --quinary: #901a3b;
 
   --primary-hover: #8e7119;
+  --box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 [data-theme="dark"] {
@@ -19,6 +20,7 @@
   --tertiary: #8d197d;
 
   --primary-hover: #b99f50;
+  --box-shadow: 0 0 10px rgba(255, 255, 255, 1);
 }
 
 /* Reset styles for typography elements */
