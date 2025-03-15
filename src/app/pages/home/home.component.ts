@@ -7,6 +7,7 @@ import { MagicCodeSnippetComponent } from '../../ui-elements/magic-code-snippet/
 import { TypewriterEffectDirective } from '../../directives/typewriter-effect.directive';
 import { DataService } from '../../data.service';
 import { IconBoxPopoverComponent } from '../../ui-elements/icon-box-popover/icon-box-popover.component';
+import { SkillBubbleComponent } from '../../ui-elements/skill-bubble/skill-bubble.component';
 
 @Component({
   selector: 'app-home',
@@ -18,6 +19,7 @@ import { IconBoxPopoverComponent } from '../../ui-elements/icon-box-popover/icon
     TypewriterEffectDirective,
     MagicCodeSnippetComponent,
     IconBoxPopoverComponent,
+    SkillBubbleComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',

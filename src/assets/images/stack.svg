@@ -1,0 +1,16 @@
+<svg style="stroke-linejoin: round;" width="500" height="500" viewBox="0 0 500 500"
+  xmlns="http://www.w3.org/2000/svg">
+  <rect width="500" height="500" fill="#8888FF" />
+
+  <!-- Untere Ebene -->
+  <polygon points="100,325 250,275 400,325 400,375 250,425 100,375" fill="#E65100" stroke="#000" stroke-width="3" />
+  <polygon points="100,325 250,275 400,325 250,375" fill="#FFCCBC" stroke="#000" stroke-width="3" />
+
+  <!-- Mittlere Ebene -->
+  <polygon points="100,225 250,175 400,225 400,275 250,325 100,275" fill="#0097A7" stroke="#000" stroke-width="3" />
+  <polygon points="100,225 250,175 400,225 250,275" fill="#B2EBF2" stroke="#000" stroke-width="3" />
+
+  <!-- Obere Ebene -->
+  <polygon points="100,125 250,75 400,125 400,175 250,225 100,175" fill="#D32F2F" stroke="#000" stroke-width="3" />
+  <polygon points="100,125 250,75 400,125 250,175" fill="#FFCDD2" stroke="#000" stroke-width="3" />
+</svg>

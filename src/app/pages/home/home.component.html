@@ -72,3 +72,13 @@
 @if(!triggerCodeExample()) {
 <app-magic-code-snippet />
 }
+<app-two-column-layout
+  imageSrc="assets/images/stack.svg"
+  imageAlt="Julian from side"
+  [imageRight]="false"
+>
+  <div class="two-column-text-wrapper">
+    <h2>My Tech Stack</h2>
+    <app-skill-bubble />
+  </div>
+</app-two-column-layout>
