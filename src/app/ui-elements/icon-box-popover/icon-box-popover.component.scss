@@ -12,13 +12,18 @@
     border-radius: 5px;
     padding: 10px 20px;
     width: 180px;
-    transition: width ease-out 0.3s 0.3s, height ease-out 0.3s;
+    transition: width ease-out 0.3s 0.3s, height ease-out 0.3s,
+      box-shadow ease-out 0.3s;
     overflow: hidden;
 
     display: flex;
     flex-direction: column;
     gap: 20px;
     cursor: pointer;
+
+    &:hover {
+      box-shadow: var(--box-shadow-hover);
+    }
 
     .headline {
       display: flex;
