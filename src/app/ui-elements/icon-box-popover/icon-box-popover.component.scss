@@ -1,3 +1,5 @@
+@use "../../../breakpoints.scss" as *;
+
 :host {
   display: flex;
   justify-content: center;
@@ -58,7 +60,7 @@
     }
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: $breakpoint-large) {
     justify-content: flex-start;
 
     .icon-box .headline {

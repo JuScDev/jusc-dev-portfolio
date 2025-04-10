@@ -1,3 +1,5 @@
+@use "../../../breakpoints.scss" as *;
+
 :host {
   display: flex;
   flex-direction: column;
@@ -60,7 +62,7 @@
     }
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: $breakpoint-large) {
     flex-direction: row;
     justify-content: space-between;
 

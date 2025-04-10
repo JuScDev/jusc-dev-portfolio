@@ -1,3 +1,5 @@
+@use "../../../breakpoints.scss" as *;
+
 :host {
   display: flex;
   flex-direction: column-reverse;
@@ -46,7 +48,7 @@
     }
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: $breakpoint-large) {
     flex-direction: row;
     min-height: 85dvh;
 
