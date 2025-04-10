@@ -1,4 +1,6 @@
 import { Component, HostBinding, input } from '@angular/core';
+
+type LoadingType = 'lazy' | 'eager';
 @Component({
   selector: 'app-two-column-layout',
   imports: [],
@@ -9,6 +11,8 @@ export class TwoColumnLayoutComponent {
   public imageSrc = input.required<string>();
 
   public imageAlt = input.required<string>();
+
+  public loading = input<LoadingType>('eager');
 
   public imageRight = input<boolean>(true);
 

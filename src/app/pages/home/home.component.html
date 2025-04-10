@@ -1,4 +1,5 @@
 <app-theme-toggle />
+<app-scroll-arrows />
 <h1
   appTypewriterEffect
   [reserveSpace]="true"
@@ -6,7 +7,7 @@
 ></h1>
 <app-two-column-layout
   class="first-section"
-  imageSrc="assets/images/julian_front.jpeg"
+  imageSrc="assets/images/julian_front_small.jpeg"
   imageAlt="Julian from front"
 >
   <div class="two-column-text-wrapper">
@@ -35,9 +36,10 @@
 ></app-word-flip>
 <app-two-column-layout
   class="first-section align-top"
-  imageSrc="assets/images/julian_side.jpeg"
+  imageSrc="assets/images/julian_side_small.jpeg"
   imageAlt="Julian from side"
   [imageRight]="false"
+  [loading]="'lazy'"
 >
   <div class="two-column-text-wrapper">
     <h2>Clean Code, Performance & Great UX – My Development Principles</h2>
@@ -76,9 +78,11 @@
   imageSrc="assets/images/stack.svg"
   imageAlt="Julian from side"
   [imageRight]="false"
+  [loading]="'lazy'"
 >
   <div class="two-column-text-wrapper">
-    <h2>My Tech Stack</h2>
+    <h2>Tech Stack</h2>
     <app-skill-bubble />
   </div>
 </app-two-column-layout>
+<app-footer />

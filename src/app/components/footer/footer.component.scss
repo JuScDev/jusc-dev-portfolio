@@ -1,0 +1,47 @@
+:host {
+  display: block;
+  width: 100%;
+  border-top: 1px solid var(--primary);
+  padding-top: 100px;
+
+  footer {
+    background-color: var(--global-bg);
+    color: var(--global-text);
+    text-align: center;
+
+    .footer-headline,
+    .footer-subline,
+    .footer-links {
+      margin-bottom: 20px;
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+
+      a {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        color: var(--primary);
+        text-decoration: none;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: var(--primary-hover);
+        }
+      }
+    }
+
+    .copyright {
+      font-size: 0.875rem;
+      color: #aaa;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    padding-top: 50px;
+  }
+}

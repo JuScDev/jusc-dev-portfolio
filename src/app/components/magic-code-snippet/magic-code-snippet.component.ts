@@ -9,8 +9,8 @@ import {
   ViewChild,
 } from '@angular/core';
 import { DataService } from '../../data.service';
-import { Theme } from '../theme-toggle/theme-toggle.component';
 import { TypewriterEffectDirective } from '../../directives/typewriter-effect.directive';
+import { Theme } from '../../ui-elements/theme-toggle/theme-toggle.component';
 
 @Component({
   selector: 'app-magic-code-snippet',
