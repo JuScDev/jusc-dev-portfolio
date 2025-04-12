@@ -1,28 +1,73 @@
+@use "../../../breakpoints.scss" as *;
+
 :host {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
+  display: block;
+
+  .layout-small,
+  .layout-large {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .layout-small {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .layout-large {
+    display: none;
+    flex-direction: column;
+  }
 
   .row {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 50px;
+  }
+
+  .bubble {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid var(--global-text);
+    cursor: pointer;
+    font-size: 26px;
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    > img {
+      width: 35px;
+      height: 35px;
+    }
+
+    &:hover {
+      transform: scale(1.5);
+      box-shadow: var(--box-shadow-hover);
+    }
+  }
+
+  @media (min-width: $breakpoint-large) {
+    .layout-small {
+      display: none;
+    }
+
+    .layout-large {
+      display: flex;
+    }
+
+    .row {
+      flex-wrap: nowrap;
+    }
 
     .bubble {
       width: 60px;
       height: 60px;
-      border-radius: 50%;
-      background-color: white;
-      border: 1px solid var(--global-text);
-      cursor: pointer;
-      font-size: 26px;
-      transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
-
-      display: flex;
-      justify-content: center;
-      align-items: center;
 
       > img {
         width: 35px;
@@ -39,11 +84,6 @@
           width: 25px;
           height: 25px;
         }
-      }
-
-      &:hover {
-        transform: scale(1.5);
-        box-shadow: var(--box-shadow-hover);
       }
     }
   }
