@@ -1,11 +1,11 @@
-<label class="theme-switch" for="checkbox">
+<label tabindex="-1" class="theme-switch" for="checkbox">
   <input
     type="checkbox"
     id="checkbox"
     [checked]="dataService.theme() === 'dark'"
     (change)="dataService.toggleTheme()"
   />
-  <div class="slider">
+  <button class="slider" tabindex="0" (click)="dataService.toggleTheme()">
     <div class="slider-circle">
       @if (dataService.theme() === 'dark') {
       <i class="fa-solid fa-moon"></i>
@@ -13,5 +13,5 @@
       <i class="fa-solid fa-sun"></i>
       }
     </div>
-  </div>
+  </button>
 </label>

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, output } from '@angular/core';
 
 @Component({
   selector: 'app-scroll-arrows',
@@ -7,17 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './scroll-arrows.component.scss',
 })
 export class ScrollArrowsComponent {
-  public scrollUp() {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    });
-  }
+  public scrollUp = output<void>();
 
-  public scrollDown() {
-    window.scrollTo({
-      top: document.body.scrollHeight,
-      behavior: 'smooth',
-    });
-  }
+  public scrollDown = output<void>();
 }

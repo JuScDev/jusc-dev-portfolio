@@ -42,4 +42,18 @@ export class HomeComponent {
       }, 50);
     }
   }
+
+  public scrollUp() {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  }
+
+  public scrollDown() {
+    window.scrollTo({
+      top: document.body.scrollHeight,
+      behavior: 'smooth',
+    });
+  }
 }

@@ -1,5 +1,5 @@
 <app-theme-toggle />
-<app-scroll-arrows />
+<app-scroll-arrows (scrollUp)="scrollUp()" (scrollDown)="scrollDown()" />
 <h1
   appTypewriterEffect
   [reserveSpace]="true"
@@ -19,7 +19,11 @@
     </p>
     <div class="call-to-action">
       <app-button text="My Work"></app-button>
-      <app-button text="Contact" [variant]="'secondary'"></app-button>
+      <app-button
+        text="Contact"
+        [variant]="'secondary'"
+        (click)="scrollDown()"
+      ></app-button>
     </div>
   </div>
 </app-two-column-layout>
@@ -74,15 +78,8 @@
 @if(!triggerCodeExample()) {
 <app-magic-code-snippet />
 }
-<app-two-column-layout
-  imageSrc="assets/images/stack.svg"
-  imageAlt="Julian from side"
-  [imageRight]="false"
-  [loading]="'lazy'"
->
-  <div class="two-column-text-wrapper">
-    <h2>Tech Stack</h2>
-    <app-skill-bubble />
-  </div>
-</app-two-column-layout>
+<div class="tech-stack">
+  <h2>Tech Stack</h2>
+  <app-skill-bubble />
+</div>
 <app-footer />

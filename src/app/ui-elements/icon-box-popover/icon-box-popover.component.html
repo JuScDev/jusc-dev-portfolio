@@ -1,4 +1,4 @@
-<div class="icon-box" (click)="popupContentShown.set(!popupContentShown())">
+<button class="icon-box" (click)="popupContentShown.set(!popupContentShown())">
   <div class="headline">
     <span class="icon">{{ icon() }}</span>
     <span class="label">{{ label() }}</span>
@@ -8,4 +8,4 @@
     <ng-content />
   </div>
   }
-</div>
+</button>

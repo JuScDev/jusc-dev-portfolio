@@ -29,6 +29,14 @@
     }
   }
 
+  .tech-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin: 100px 0;
+  }
+
   @media (min-width: $breakpoint-large) {
     gap: 20px;
 
