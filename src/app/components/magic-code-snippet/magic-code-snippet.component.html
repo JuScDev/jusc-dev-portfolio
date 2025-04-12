@@ -1,4 +1,12 @@
-<p class="live-element">I <span class="heart">❤️</span> Coding</p>
+<p class="live-element">
+  @if(showAnimatedText()) { I <span class="heart">❤️</span> Coding } @else {
+  <span class="loading-dots">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </span>
+  }
+</p>
 
 <div class="editor">
   <div class="editor-headline">

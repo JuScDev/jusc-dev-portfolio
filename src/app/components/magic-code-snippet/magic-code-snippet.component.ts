@@ -89,6 +89,8 @@ export class MagicCodeSnippetComponent implements AfterViewInit {
 
   private _dataService = inject(DataService);
 
+  public showAnimatedText = signal(false);
+
   public showFirstElements = signal(false);
 
   public showSecondElements = signal(false);
@@ -110,6 +112,7 @@ export class MagicCodeSnippetComponent implements AfterViewInit {
   }
 
   public restartAnimation(): void {
+    this.showAnimatedText.set(false);
     this.showFirstElements.set(false);
     this.showSecondElements.set(false);
     this.showSecondStepAnimation.set(false);
@@ -121,6 +124,7 @@ export class MagicCodeSnippetComponent implements AfterViewInit {
     }, 0);
 
     setTimeout(() => {
+      this.showAnimatedText.set(true);
       this.secondLineEl.nativeElement.innerHTML = this.secondLineContent;
       this._editLine(this.secondLineEl, this._dataService.theme());
     }, 5300);
