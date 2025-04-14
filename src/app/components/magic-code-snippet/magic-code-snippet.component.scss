@@ -13,13 +13,14 @@
     line-height: 52px;
     flex-grow: 1;
     text-align: center;
-    background-color: #ebebeb;
+    background-color: var(--base-grey);
     border-radius: 5px;
     padding: 20px;
     width: 100%;
 
     .heart {
       margin: 0 10px;
+      color: var(--secondary);
     }
 
     .loading-dots {
@@ -32,7 +33,7 @@
       .dot {
         width: 10px;
         height: 10px;
-        background-color: black;
+        background-color: var(--contrast-grey);
         border-radius: 50%;
         animation: bounce 1s infinite;
 
@@ -111,6 +112,7 @@
 
     .live-element {
       font-size: 24px;
+      width: auto;
     }
 
     .editor {

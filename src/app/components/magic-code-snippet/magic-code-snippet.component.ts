@@ -127,11 +127,11 @@ export class MagicCodeSnippetComponent implements AfterViewInit {
       this.showAnimatedText.set(true);
       this.secondLineEl.nativeElement.innerHTML = this.secondLineContent;
       this._editLine(this.secondLineEl, this._dataService.theme());
-    }, 5300);
+    }, 6500);
 
     setTimeout(() => {
       this.showSecondElements.set(true);
-    }, 7300);
+    }, 8500);
 
     setTimeout(() => {
       this.fourthLineEl.nativeElement.innerHTML = this.fourthLineContent;
@@ -150,11 +150,11 @@ export class MagicCodeSnippetComponent implements AfterViewInit {
         this.seventeenthLineContent;
       this._editLine(this.seventeenthLineEl, this._dataService.theme());
       this.showSecondStepAnimation.set(true);
-    }, 10400);
+    }, 11600);
 
     setTimeout(() => {
       this.showLastElements.set(true);
-    }, 12500);
+    }, 13700);
 
     setTimeout(() => {
       this.ninthLineEl.nativeElement.innerHTML = this.ninthLineContent;
@@ -172,7 +172,7 @@ export class MagicCodeSnippetComponent implements AfterViewInit {
       this.sixteenthLineEl.nativeElement.innerHTML = this.sixteenthLineContent;
       this._editLine(this.sixteenthLineEl, this._dataService.theme());
       this.showLastAnimation.set(true);
-    }, 16500);
+    }, 17700);
 
     setTimeout(() => {
       this.resetContent();
@@ -246,11 +246,11 @@ export class MagicCodeSnippetComponent implements AfterViewInit {
   }
 
   public secondLineContent = `
-    <<span class="dark-blue">p</span>>I <<span class="dark-blue">span</span> <span class="light-blue">class</span>="heart">❤️&lt;/<span class="dark-blue">span</span>> Coding &lt;/<span class="dark-blue">p</span>>
+    <<span class="dark-blue">p</span>>I <<span class="dark-blue">i</span> <span class="light-blue">class</span>="heart fa-solid fa-heart">&lt;/<span class="dark-blue">i</span>> Coding &lt;/<span class="dark-blue">p</span>>
   `;
 
   public secondLineTypeable = `
-   <p>I <span class="heart">❤️</span> Coding </p>
+   <p>I <i class="heart fa-solid fa-heart"></i> Coding </p>
   `;
 
   public fourthLineContent = `
