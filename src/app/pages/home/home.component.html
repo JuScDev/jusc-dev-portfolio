@@ -40,7 +40,11 @@
 ></app-word-flip>
 <app-two-column-layout
   class="first-section align-top"
-  imageSrc="assets/images/julian_side_small.jpeg"
+  [imageSrc]="
+    dataService.theme() === 'light'
+      ? 'assets/images/logo-julian-scheiner-web-development-light.svg'
+      : 'assets/images/logo-julian-scheiner-web-development-dark.svg'
+  "
   imageAlt="Julian from side"
   [imageRight]="false"
   [loading]="'lazy'"
